@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<label>Enter number: </label><br>
+<input type= text id="number" onchange="factorialOfNum()"><br>
+<p id="div"></p>
+
+<script>
+function factorialOfNum() {
+let res = '';
+const number = parseInt(document.getElementById("number").value);
+if (number < 0) {
+    res = 'Error! Factorial for negative number does not exist.';
+}
+else if (number === 0) {
+    res = `The factorial of ${number} is 1.`;
+}
+else {
+    let fact = 1;
+    for (i = 1; i <= number; i++) {
+        fact *= i;
+    }
+    res = `The factorial of ${number} is ${fact}.`;
+}
+document.getElementById("div").innerHTML = res;
+}
+</script>
+
+</body>
+</html>
