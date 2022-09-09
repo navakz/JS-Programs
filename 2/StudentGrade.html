@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="div"></p>
+
+<script>
+document.getElementById("div").innerHTML = 
+findGrade("Demo Student", 91) + "<br/>" +
+findGrade("Demo Student", 85) + "<br/>" +
+findGrade("Demo Student", 73) + "<br/>" +
+findGrade("Demo Student", 53) + "<br/>" +
+findGrade("Demo Student", 20) + "<br/>" +
+findGrade("Demo Student", 120);
+function findGrade(name, marks) {
+let res = '';
+switch(true){
+  case(marks >= 90 && marks <= 100):
+    res = `${name} you have received S grade`;
+  break;
+  case(marks >= 80 && marks < 90):
+    res = `${name} you have received A grade`;
+  break;
+  case(marks >= 70 && marks < 80):
+    res = `${name} you have received B grade`;
+  break;
+  case(marks >= 60 && marks < 70):
+    res = `${name} you have received C grade`;
+  break;
+  case(marks >= 50 && marks < 60):
+    res = `${name} you have received D grade`;
+  break;
+  case(marks >= 40 && marks < 50):
+    res = `${name} you have received E grade`;
+  break;
+  case(marks >= 0 && marks <40):
+    res = `${name} you have Failed`;
+  break;
+  default:
+    res = `Invalid marks of ${marks}`;
+  break;
+  }
+  return res;
+}
+</script>
+
+</body>
+</html>

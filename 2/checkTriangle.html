@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="div"></p>
+
+<script>
+function checkTriangle(x, y, z)
+{
+    if (x == y && y == z)
+        document.write("Equilateral Triangle");
+    else if (x == y || y == z || z == x)
+        document.write("Isosceles Triangle");
+    else
+        document.write("Scalene Triangle");
+}
+    let x = 8, y = 7, z = 9;
+    checkTriangle(x, y, z);
+</script>
+
+</body>
+</html>
