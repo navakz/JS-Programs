@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="div"></p>
+
+<script>
+let n = 5;
+let string = "";
+let count = 0;
+for (let i = 1; i <= n; i++) {
+  for (let j = 0; j < i; j++) {
+    if(count < 10){
+      string += (count + 1);
+      count++;
+    }
+  }
+  string += "\n";
+}
+console.log(string);
+</script>
+
+</body>
+</html>

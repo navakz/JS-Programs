@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+function matchHouses(step){
+return step == 0 ? 0 : (step*5) + 1;
+}
+document.getElementById("demo").innerHTML = matchHouses(1) + "<br/>" + matchHouses(4) + "<br/>" +matchHouses(87) + "<br/>";
+</script>
+
+</body>
+</html>
